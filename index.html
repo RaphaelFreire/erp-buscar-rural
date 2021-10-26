@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERP Julia | Buscar Rural</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .main-container {
+    padding: 30px;
+  }
+
+  /* HEADING */
+
+  .heading {
+    text-align: center;
+  }
+
+  .heading__title {
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+
+  .heading__link {
+    text-decoration: none;
+  }
+
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+
+  /* CARDS */
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20%;
+  }
+
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    min-height: 100px;
+    display: grid;
+    grid-template-rows: 10px 25px 1fr 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+
+  .card__link:hover::after {
+    width: 100%;
+  }
+
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+
+  .card__credict {
+    margin: 25px auto;
+  }
+
+  /* CARD BACKGROUNDS */
+
+  .card-1 {
+    background: linear-gradient(#075231, #0e721f);
+  }
+
+  /* RESPONSIVE */
+
+  @media (max-width: 1600px) {
+    .heading__title {
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      justify-content: center;
+      margin: 0;
+    }
+
+    .main-container {
+      padding: 0px;
+    }
+
+    .card__credict {
+      margin: 25px 25px;
+    }
+
+  }
+</style>
+
+<body>
+  <div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">
+        <img src="./img/logo-buscar-rural.png" title="Logo Buscar Rural" alt="Buscar Rural" />
+      </h1>
+    </div>
+
+    <div class="cards">
+      <div class="card card-1">
+        <h2 class="card__title">Marketing</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Acessar <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+
+      <div class="card card-1">
+        <h2 class="card__title">Anúncios</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Acessar <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card card-1">
+        <h2 class="card__title">Comercial</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Acessar <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card card-1">
+        <h2 class="card__title">Atendimento</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Acessar <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card card-1">
+        <h2 class="card__title">Financeiro</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Acessar <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card card-1">
+        <h2 class="card__title">Tecnologia</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Acessar <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <span class="card__credict">©Copyright 2020 - Buscar Rural - Uma empresa do Grupo Nutrimais - Todos os direitos
+        reservados</span>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
